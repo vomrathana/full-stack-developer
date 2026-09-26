@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vom Rathana - IT Student Profile</title>
+
+    <meta name="description"
+        content="Vom Rathana is a first-year Information Technology Engineering student at RUPP who enjoys learning programming, web development, technology, and new skills.">
+
+    <!-- Author -->
+    <meta name="author" content="Vom Rathana">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Vom Rathana - IT Student">
+    <meta property="og:description"
+        content="First-year Information Technology Engineering student at RUPP, Cambodia.">
+    <meta property="og:image" content="image.png">
+    <meta property="og:type" content="website">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Vom Rathana - Information Technology Student</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#about">About Me</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Vom Rathana. I am a first-year
+            Information Technology Engineering student at the
+            Royal University of Phnom Penh (RUPP).
+        </p>
+
+        <p>
+            I enjoy learning technology, programming, web development,
+            and new skills. My goal is to become a web developer in
+            the future.
+        </p>
+
+        <!-- Form Start -->
+        <form action="/submit.php" method="POST" enctype="multipart/form-data"
+            accept-charset="UTF-8" autocomplete="off"
+            name="studentForm" target="_blank" rel="noopener">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <!-- Text -->
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username"
+                    maxlength="50"
+                    placeholder="Enter your name"
+                    value="Vom Rathana"
+                    title="Enter your full name"
+                    required>
+                <br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"
+                    placeholder="Enter password"
+                    title="Enter your password"
+                    required>
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="Enter your email"
+                    title="Enter your email address"
+                    required>
+                <br><br>
+
+                <!-- Telephone -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="+855 12 345 678"
+                    title="Enter your telephone number">
+                <br><br>
+
+                <!-- URL -->
+                <label for="website">Portfolio Website:</label>
+                <input type="url" id="website" name="website"
+                    placeholder="https://example.com"
+                    title="Enter your portfolio website URL">
+                <br><br>
+
+                <!-- Search -->
+                <label for="searchbox">Search:</label>
+                <input type="search" id="searchbox" name="searchbox"
+                    placeholder="Search my skills..."
+                    title="Search information">
+                <br><br>
+
+                <!-- Number -->
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"
+                    min="18" max="60"
+                    value="19"
+                    title="Enter your age"
+                    required>
+                <br><br>
+
+                <!-- Date -->
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday"
+                    title="Select your birth date">
+                <br><br>
+
+                <!-- DateTime Local -->
+                <label for="meeting">Meeting Time:</label>
+                <input type="datetime-local" id="meeting"
+                    name="meeting"
+                    title="Select meeting date and time">
+                <br><br>
+
+                <!-- Month -->
+                <label for="expiry">Study Start Month:</label>
+                <input type="month" id="expiry" name="expiry"
+                    title="Select study start month and year">
+                <br><br>
+
+                <!-- Week -->
+                <label for="weeknum">Study Week:</label>
+                <input type="week" id="weeknum" name="weeknum"
+                    title="Select study week">
+                <br><br>
+
+                <!-- Color -->
+                <label for="favcolor">Favorite Color:</label>
+                <input type="color" id="favcolor" name="favcolor"
+                    title="Select your favorite color">
+                <br><br>
+
+                <!-- Radio -->
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender"
+                    value="male" title="Select male" checked>
+
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender"
+                    value="female" title="Select female">
+
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <!-- Checkbox -->
+                <label>Interests:</label>
+
+                <input type="checkbox" id="programming"
+                    name="interest" value="programming"
+                    title="Select programming">
+
+                <label for="programming">Programming</label>
+
+                <input type="checkbox" id="web"
+                    name="interest" value="web development"
+                    title="Select web development">
+
+                <label for="web">Web Development</label>
+
+                <input type="checkbox" id="technology"
+                    name="interest" value="technology"
+                    title="Select technology">
+
+                <label for="technology">Technology</label>
+
+                <input type="checkbox" id="english"
+                    name="interest" value="english"
+                    title="Select English">
+
+                <label for="english">English</label>
+
+                <br><br>
+
+                <!-- Select & Optgroup -->
+                <label for="course">Current Study:</label>
+
+                <select id="course" name="course"
+                    title="Select your study">
+
+                    <optgroup label="Programming">
+                        <option value="c">C Programming</option>
+                        <option value="cpp">C++ Programming</option>
+                        <option value="python">Python</option>
+                    </optgroup>
+
+                    <optgroup label="Web Development">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </optgroup>
+
+                </select>
+
+                <br><br>
+
+                <!-- Datalist -->
+                <label for="city">Location:</label>
+
+                <input list="cities" id="city" name="city"
+                    value="Kandal"
+                    title="Select your location">
+
+                <datalist id="cities">
+                    <option value="Kandal">
+                    <option value="Phnom Penh">
+                    <option value="Siem Reap">
+                    <option value="Battambang">
+                </datalist>
+
+                <br><br>
+
+                <!-- Textarea -->
+                <label for="message">About Me:</label><br>
+
+                <textarea id="message" name="message"
+                    rows="4" cols="30"
+                    placeholder="Write something about yourself..."
+                    title="Enter information about yourself">I am a first-year IT Engineering student at RUPP. I am learning programming and web development.</textarea>
+
+                <br><br>
+
+                <!-- File Upload -->
+                <label for="resume">Upload CV:</label>
+
+                <input type="file" id="resume" name="resume"
+                    title="Upload your CV">
+
+                <br><br>
+
+                <!-- Readonly -->
+                <label for="student_id">Student ID:</label>
+
+                <input type="text" id="student_id"
+                    name="student_id"
+                    value="RUPP-IT-2025"
+                    readonly
+                    title="Student ID (readonly)">
+
+                <br><br>
+
+                <!-- Disabled -->
+                <label for="promo">Future Job Position:</label>
+
+                <input type="text" id="promo"
+                    name="promo"
+                    value="Web Developer"
+                    disabled
+                    title="Future job position">
+
+                <br><br>
+
+                <!-- Output -->
+                <label for="result">Learning Progress:</label>
+
+                <output id="result" name="result">
+                    Beginner
+                </output>
+
+                <br><br>
+
+                <!-- Buttons -->
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset">
+
+                <input type="button" value="Click Me">
+
+                <button type="submit">Send Information</button>
+
+            </fieldset>
+        </form>
+        <!-- Form End -->
+
+
+        <!-- Details -->
+        <details>
+            <summary>Click to View My Learning Goals</summary>
+
+            <p>
+                My goal is to improve my programming skills,
+                learn web development, build real projects,
+                and become a professional web developer.
+            </p>
+
+        </details>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>Skills I Am Learning</h2>
+
+        <ul>
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+            <li>Python</li>
+            <li>Web Development</li>
+            <li>Arduino & Tinkercad</li>
+            <li>SOLIDWORKS</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Canvas -->
+    <canvas id="myCanvas" width="200" height="100">
+        Your browser does not support canvas.
+    </canvas>
+
+    <br><br>
+
+
+    <!-- SVG -->
+    <svg width="100" height="100">
+        <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="green"
+            stroke-width="4"
+            fill="yellow" />
+    </svg>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            If you would like to contact me about my projects,
+            learning journey, or web development, please send me
+            a message using the form above.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Vom Rathana. Cambodia.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+

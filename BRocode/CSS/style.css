@@ -1,0 +1,54 @@
+body{
+    
+    background-image: url("image.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color: #ace9bb;
+    font-family:   "consolas" , "monospace";
+    font-size: 50px;
+    border-width: 5px;
+    border-color:rgb(254, 216, 0);
+    border-radius: 10px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:linear-gradient(blue,green,black,white)
+}
+h2{
+    color: #f5f2f2;
+    font-family: "Press Start 2P" , "consolas" , "monospace";
+     border-style: solid;
+    border-width: 10px;
+    border-color:rgb(254, 216, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+.odd{
+    color: #f20000;
+    font-style: italic;
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(254, 216, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+.even{
+    color: #ffffff;
+    font-style:oblique;
+    font-weight: bold;
+    font-family: "Press Start 2P" , "consolas" , "monospace";
+    font-size: 20px;
+    font-variant: small-caps;
+    font-decoration: underline;
+    font-kerning: normal;
+    border-style: outset;
+    border-width: 5px;
+    border-color:rgb(254, 216, 0);
+    border-radius: 10px;
+    padding: 10px;
+}

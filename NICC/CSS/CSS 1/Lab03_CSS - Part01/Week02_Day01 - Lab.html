@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 01 | Day 01 | Lab Guide</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased line-height-relaxed selection:bg-blue-500 selection:text-white">
+
+    <div class="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        
+        <!-- Header Section -->
+        <header class="border-b border-slate-200 pb-6 mb-8">
+            <div class="flex items-center gap-2 text-sm font-semibold tracking-wider text-blue-600 uppercase mb-2">
+                <span>Week 01</span>
+                <span class="text-slate-300">•</span>
+                <span>Day 01</span>
+                <span class="text-slate-300">•</span>
+                <span class="bg-blue-50 text-blue-700 px-2.5 py-0.5 rounded-full text-xs font-bold">Lab</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+                Lab 01: Introduction to CSS (Part 01)
+            </h1>
+        </header>
+
+        <!-- Main Content Arena -->
+        <main class="space-y-12">
+
+            <!-- Section: Folder Structure -->
+            <section class="bg-white rounded-xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                    <h2 class="text-xl font-bold text-slate-900">Folder Structure</h2>
+                <p class="text-slate-600 mb-4 text-sm sm:text-base">Ensure your files are organized correctly inside your project directory:</p>
+                <div class="bg-slate-900 rounded-lg p-4 font-mono text-sm text-slate-300 overflow-x-auto shadow-inner">
+<pre>portfolio-lab/
+├── css/
+│   └── style.css
+├── index.html
+└── profile.jpg</pre>
+                </div>
+            </section>
+
+            <!-- Section: Step 1 -->
+            <section class="bg-white rounded-xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="flex items-center justify-center bg-blue-600 text-white font-bold h-7 w-7 rounded-full text-sm">1</span>
+                    <h2 class="text-xl font-bold text-slate-900">Link your CSS</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm sm:text-base">Add the following line inside the <code class="bg-slate-100 text-pink-600 px-1.5 py-0.5 rounded font-mono text-sm">&lt;head&gt;</code> section of your <code class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded font-mono text-sm">index.html</code> file:</p>
+                <div class="bg-slate-900 rounded-lg p-4 font-mono text-sm text-emerald-400 overflow-x-auto shadow-inner">
+<pre>&lt;<span class="text-blue-400">link</span> <span class="text-purple-400">rel</span>=<span class="text-amber-300">"stylesheet"</span> <span class="text-purple-400">href</span>=<span class="text-amber-300">"css/style.css"</span>&gt;</pre>
+                </div>
+            </section>
+
+            <!-- Section: Step 2 -->
+            <section class="bg-white rounded-xl shadow-sm border border-slate-200/80 p-6 sm:p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="flex items-center justify-center bg-blue-600 text-white font-bold h-7 w-7 rounded-full text-sm">2</span>
+                    <h2 class="text-xl font-bold text-slate-900">Styling the Page</h2>
+                </div>
+                <p class="text-slate-600 mb-4 text-sm sm:text-base">Create <code class="bg-slate-100 text-slate-700 px-1.5 py-0.5 rounded font-mono text-sm">css/style.css</code> and add the following code:</p>
+                
+                <div class="bg-slate-900 rounded-lg p-4 font-mono text-xs sm:text-sm text-slate-300 max-h-[450px] overflow-y-auto shadow-inner whitespace-pre">/* 1. Global Styles (Element Selectors) */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* CSS Fonts lesson */
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* 2. Header & Navigation (Class Selectors) */
+.header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.nav-link {
+    text-decoration: none; /* Removes underline */
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.nav-link:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* 3. Hero Section (ID Selector) */
+#hero {
+    background-color: #ffffff;
+    text-align: center; /* Centers text and image */
+    padding: 50px 20px;
+}
+
+#hero-title {
+    font-size: 40px;
+    color: #111827;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem; /* Using rem units */
+    color: #6b7280;
+}
+
+/* 4. Images */
+img {
+    border: 5px solid #2563eb; /* Border property */
+    margin-top: 20px;
+}
+
+/* 5. Sections */
+section {
+    padding: 40px 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #2563eb;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* 6. Form Basics */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+/* 7. Buttons (Class Selectors) */
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #e5e7eb;
+    color: #374151;
+    padding: 10px 20px;
+    border: none;
+}</div>
+            </section>
+
+            <!-- Section: Submission -->
+            <section class="bg-indigo-50 rounded-xl border border-indigo-100 p-6 sm:p-8">
+
+                <h2 class="text-xl font-bold text-indigo-950">Submission</h2>
+
+                <p class="text-indigo-900/80 text-sm sm:text-base">submit your project as a ZIP file</p>
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

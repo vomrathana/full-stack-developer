@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Essential Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vom Rathana - Information Technology Student</title>
+  <meta name="description" content="Vom Rathana is a first-year Information Technology Engineering student at RUPP who enjoys learning technology, programming, web development, and new skills.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Vom Rathana - IT Student">
+  <meta property="og:description" content="First-year Information Technology Engineering student at RUPP">
+  <meta property="og:image" content="image.png">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- HEADER: Navigation -->
+<header class="header">
+    <h1 class="logo">Vom Rathana</h1>
+
+   <input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="menu-icon">☰</label>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+
+      <h1 id="hero-title">Information Technology Student</h1>
+
+      <p class="hero-subtitle">
+        Learning programming, web development, and new technologies
+      </p>
+
+      <img
+        src="image.png"
+        alt="Vom Rathana, first-year Information Technology student at RUPP"
+        loading="lazy"
+        width="300"
+        height="300"
+      >
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about" aria-labelledby="about-title">
+
+      <h2 id="about-title">About Me</h2>
+
+      <p>
+        I am a first-year Information Technology Engineering student at
+        the Royal University of Phnom Penh (RUPP). I enjoy learning
+        technology, programming, web development, and new skills.
+      </p>
+
+      <p>
+        <strong>Currently Learning:</strong>
+        C → C++ → Git/GitHub → Python → Data Structures → Web Development
+      </p>
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills" aria-labelledby="skills-title">
+
+      <h2 id="skills-title">Skills I'm Learning</h2>
+
+      <ul class="skills-list">
+        <li>C Programming</li>
+        <li>C++ Programming</li>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>Python</li>
+        <li>Web Development</li>
+        <li>Tinkercad & Arduino</li>
+        <li>SOLIDWORKS</li>
+      </ul>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+
+      <h2 id="contact-title">Get In Touch</h2>
+
+      <form
+        action="/api/contact"
+        method="POST"
+        novalidate
+        aria-describedby="form-instructions"
+      >
+
+        <p id="form-instructions" class="sr-only">
+          All fields are required unless marked optional.
+        </p>
+
+
+        <!-- Full Name -->
+        <div class="form-group">
+
+          <label for="fullName">
+            Full Name <span class="required">*</span>
+          </label>
+
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            placeholder="Vom Rathana"
+            maxlength="50"
+            aria-describedby="name-help"
+          >
+
+          <small id="name-help" class="form-help">
+            Enter your full name (max 50 characters)
+          </small>
+
+        </div>
+
+
+        <!-- Email -->
+        <div class="form-group">
+
+          <label for="email">
+            Email Address <span class="required">*</span>
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="your@email.com"
+            aria-describedby="email-help"
+          >
+
+          <small id="email-help" class="form-help">
+            Your email will be used to contact you.
+          </small>
+
+        </div>
+
+
+        <!-- Phone (Optional) -->
+        <div class="form-group">
+
+          <label for="phone">
+            Phone <span class="optional">(optional)</span>
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+855 12 345 678"
+            pattern="[0-9\s+()-]+"
+            aria-describedby="phone-help"
+          >
+
+          <small id="phone-help" class="form-help">
+            Cambodia format preferred (+855)
+          </small>
+
+        </div>
+
+
+        <!-- Message -->
+        <div class="form-group">
+
+          <label for="message">
+            Message <span class="required">*</span>
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="Write your message here..."
+            maxlength="1000"
+            aria-describedby="message-help"
+          ></textarea>
+
+          <small id="message-help" class="form-help">
+            Max 1000 characters
+          </small>
+
+        </div>
+
+
+        <!-- Submit Buttons -->
+        <div class="form-actions">
+
+          <button type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+
+          <button type="reset" class="btn btn-secondary">
+            Clear Form
+          </button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <p>
+      &copy; 2026 Vom Rathana. Cambodia.
+    </p>
+
+    <ul class="social-links">
+
+      <li>
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </li>
+
+      <li>
+        <a href="mailto:your@email.com">
+          Email
+        </a>
+      </li>
+
+    </ul>
+
+  </footer>
+
+</body>
+</html>
